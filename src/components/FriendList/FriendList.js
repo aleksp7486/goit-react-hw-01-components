@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
-import css from 'components/FriendList/FriendList.module.css';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
+import { FriendsBoard } from './FriendList.styled';
+
+console.log(FriendsBoard);
 
 const FriendList = ({ friendItems }) => {
   return (
-    <ul className={css.friendList}>
+    <FriendsBoard>
       {friendItems.map(e => {
         return (
           <FriendListItem
@@ -15,7 +17,7 @@ const FriendList = ({ friendItems }) => {
           />
         );
       })}
-    </ul>
+    </FriendsBoard>
   );
 };
 

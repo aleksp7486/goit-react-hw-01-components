@@ -6,7 +6,8 @@
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .title {
-  font-size: 1.8rem;
+  padding: 10px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 1.8;
   color: rgb(66, 65, 63);
