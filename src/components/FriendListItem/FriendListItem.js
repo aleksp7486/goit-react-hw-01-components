@@ -11,6 +11,10 @@ const FriendListItem = ({ isOnline, avatar, name }) => {
   );
 };
 
-// Add props
+FriendListItem.propTypes = {
+  isOnline: PropTypes.bool,
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+};
 
 export default FriendListItem;
