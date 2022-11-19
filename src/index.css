@@ -14,13 +14,6 @@ body {
   padding: 20px;
 }
 
-#root {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

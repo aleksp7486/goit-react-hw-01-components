@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const getBgColorByStatus = props => (props.status ? 'green' : 'red');
+const getBgColorByStatus = p => (p.status ? 'green' : 'red');
 
 export const Item = styled.li`
   display: flex;

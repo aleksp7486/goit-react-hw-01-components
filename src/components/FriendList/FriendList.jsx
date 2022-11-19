@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
 import { FriendsBoard } from './FriendList.styled';
 
-console.log(FriendsBoard);
-
 const FriendList = ({ friendItems }) => {
   return (
     <FriendsBoard>
