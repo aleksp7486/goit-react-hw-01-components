@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const StatisticsCard = styled.section`
   max-width: 300px;
@@ -9,29 +9,29 @@ export const StatisticsCard = styled.section`
 `;
 
 export const Title = styled.h2`
-  padding: 10px;
-  font-size: 1.4rem;
+  padding: ${p => p.theme.space[3]}px;
+  font-size: ${p => p.theme.fontSizes.l};
   text-transform: uppercase;
-  line-height: 1.8;
-  color: rgb(66, 65, 63);
-  background-color: rgb(251, 227, 195);
+  line-height: ${p => p.theme.lineHeights.heading};
+  color: ${p => p.theme.colors.white};
+  background-color: ${p => p.theme.colors.secondary};
 `;
 
 export const StatList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  color: #fff;
+  color: ${p => p.theme.colors.white};
 `;
 
 export const Item = styled.li`
   flex-basis: 33.333%;
   flex-grow: 1;
-  padding: 5px;
+  padding: ${p => p.theme.space[2]}px;
 `;
 
 export const Label = styled.span`
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
 export const Percentage = styled.span`

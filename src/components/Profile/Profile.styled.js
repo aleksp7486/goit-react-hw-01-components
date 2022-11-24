@@ -1,56 +1,59 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
+import { theme } from 'theme';
 
 export const ProfileCard = styled.div`
   width: 300px;
-  border-radius: 4px;
+  border-radius: ${p => p.theme.radii.normal};
   overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 `;
 
 export const Description = styled.div`
-  padding: 20px;
+  padding: ${p => p.theme.space[4]}px;
   text-align: center;
-  background-color: rgb(215, 247, 249);
+  background-color: ${p => p.theme.colors.primary};
   color: rgb(58, 58, 58);
 `;
 
 export const Avatar = styled.img`
   margin: 0 auto;
   width: 200px;
-  margin-bottom: 10px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
 export const Name = styled.p`
-  margin-bottom: 10px;
-  font-size: 1.4rem;
+  margin-bottom: ${p => p.theme.space[3]}px;
+  font-size: ${p => p.theme.fontSizes.l}; ;
 `;
 
 export const Tag = styled.p`
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  margin-bottom: ${p => p.theme.space[3]}px;
+  font-size: ${p => p.theme.fontSizes.m};
 `;
 
-export const Location = styled.p``;
+export const Location = styled.p`
+  font-size: ${p => p.theme.fontSizes.m};
+`;
 
 export const Stats = styled.ul`
   display: flex;
   justify-content: space-between;
-  background-color: rgb(67, 123, 145);
-  color: #fff;
+  background-color: ${p => p.theme.colors.secondary};
+  color: ${p => theme.colors.white};
   text-align: center;
   li {
     width: calc(100% / 3);
-    padding: 10px;
+    padding: ${p => p.theme.space[3]}px;
   }
   li:not(:last-child) {
-    border-right: 1px solid rgb(215, 247, 249);
+    border-right: 1px solid #d7f7f9;
   }
 `;
 
 export const Label = styled.span`
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
 export const Quantity = styled.span`

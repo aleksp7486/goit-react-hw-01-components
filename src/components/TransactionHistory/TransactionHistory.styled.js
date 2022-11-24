@@ -1,16 +1,17 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Table = styled.table`
   width: 100%;
+  text-transform: capitalize;
   thead {
-    background-color: #7fa075;
-    color: #fff;
+    background-color: ${p => p.theme.colors.secondary};
+    color: ${p => p.theme.colors.white};
   }
   tbody {
-    background-color: #d4e8ce;
+    background-color: ${p => p.theme.colors.primary};
   }
   th,
   td {
-    padding: 10px;
+    padding: ${p => p.theme.space[3]}px;
   }
 `;
