@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { theme } from 'theme';
 
 export const ProfileCard = styled.div`
   width: 300px;
@@ -40,7 +39,7 @@ export const Stats = styled.ul`
   display: flex;
   justify-content: space-between;
   background-color: ${p => p.theme.colors.secondary};
-  color: ${p => theme.colors.white};
+  color: ${p => p.theme.colors.white};
   text-align: center;
   li {
     width: calc(100% / 3);
